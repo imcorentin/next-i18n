@@ -1,9 +1,30 @@
+.header {
+  display: flex;
+  flex: 1;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eaeaea;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header a {
+  margin: 0.2em;
+  background: #eaeaea;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: .2em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
 .container {
   padding: 0 2rem;
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;

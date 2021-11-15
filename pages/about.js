@@ -2,16 +2,16 @@ import { useRouter } from 'next/dist/client/router'
 import Layout from '../components/layout'
 import styles from '../styles/Home.module.css'
 
-const Home = () => {
+export default function About() {
   let router = useRouter()
 
   let greeting =
     router.locale === 'en-US'
-      ? 'Hello World'
+      ? 'About'
       : router.locale === 'de'
-        ? 'Hallo Welt'
+        ? 'Über'
         : router.locale === 'fr'
-          ? 'Bonjour le monde'
+          ? 'A propos'
           : ''
 
   return (
@@ -24,5 +24,3 @@ const Home = () => {
     </Layout>
   )
 }
-
-export default Home
